@@ -1,0 +1,458 @@
+* {
+    box-sizing: border-box;
+
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: white;
+    background-color: black;
+}
+
+button:hover {
+    background-color: rgb(68, 67, 67);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(26, 92, 216);
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+header a:hover {
+    color: rgb(26, 92, 216);
+    ;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(imag/lambo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#hero h1 {
+    color: rgb(239, 235, 235);
+
+
+
+}
+
+#hero button {
+    font-size: 1.5rem;
+
+
+}
+
+#Somos-profesionales .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-stock {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+
+}
+
+#nuestros-stock .container {
+    padding: 150px 0px;
+}
+
+#nuestros-stock h2 {
+    padding-top: 0;
+    font-size: 5em;
+}
+
+#nuestros-stock p {
+    display: none;
+
+}
+
+.carta1:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(imag/fiat.jpg);
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 180px 0px;
+    margin: 12px;
+    border-radius: 20px;
+
+
+}
+
+.carta2:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(imag/toyota-hilux.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0px;
+    margin: 12px;
+    border-radius: 20px;
+}
+
+.carta3:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(imag/camiones.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 170px 0px;
+    margin: 12px;
+    border-radius: 20px;
+
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2 {
+    font-size: 5vw;
+}
+
+#final button {
+    font-size: 2vw;
+}
+
+footer {
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: white
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #Somos-profesionales .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #Somos-profesionales .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Somos-profesionales h2 {
+        margin-top: 0px;
+    }
+
+    #Somos-profesionales .img-container {
+        background-image: url(imag/atencion-cliente.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+    }
+
+    #nuestros-stock .stock {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-stock h3 {
+        margin-top: 0px;
+    }
+
+    #nuestros-stock p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-stock .carta1 {
+        padding: 100px;
+        background-size: 100% 150px;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-color: rgb(50, 50, 50, 0.5);
+        box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    }
+
+    #nuestros-stock .carta2 {
+        padding: 100px;
+        background-size: 100% 150px;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-color: rgb(50, 50, 50, 0.5);
+        box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    }
+
+    #nuestros-stock .carta3 {
+        padding: 100px;
+        background-size: 100% 150px;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-color: rgb(50, 50, 50, 0.5);
+        box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    }
+
+    .carta1:first-child {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(imag/fiat-cortado.jpg);
+
+
+
+
+    }
+
+    .carta2:nth-child(2) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(imag/toyota-hilux-cortada.jpg);
+
+    }
+
+    .carta3:nth-child(3) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(imag/camiones-cortados.jpg);
+
+    }
+
+    #caracteristicas {
+        background-image: url(imag/Servicio-Cliente.jpg);
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+
+    }
+
+    #caracteristicas .container {
+        text-align: initial;
+    }
+
+    #caracteristicas ul {
+        margin-left: 100px;
+    }
+
+    #final h2 {
+        font-size: 5em;
+    }
+
+    #final button {
+        font-size: 2em;
+    }
+
+    footer{
+        position: absolute;
+        background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        height: auto;
+        width: 100vw;
+        font-family: "open sans";
+        padding-top: 5px;
+        color: #fff;
+    
+    }
+    
+    .footer-contenido{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-contenido{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    
+    .footer-contenido p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+    }
+    
+    .social{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+    }
+    
+    .social li{
+        margin: 0 10px;
+    }
+    
+    .social a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .social a i{
+        font-size: 1.1rem;
+        transition: color .4s ease;
+    }
+    
+    .social a:hover i{
+        color: rgb(0, 55, 255)
+    }
+    
+    .footer-bottom{
+        background: #000;
+        width: 100vw;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer-bottom p{
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+    }
+
+    @media (min-width: 1200px) {
+        #caracteristicas {
+            background-position-x: calc(100vw - 800px);
+        }
+    }
+}
